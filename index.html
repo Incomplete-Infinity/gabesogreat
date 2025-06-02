@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guardian</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/topcoat-desktop-dark.min.css" />
+    <link rel="stylesheet" href="css/topcoat-desktop-light.min.css" disabled/>
+    <link rel="stylesheet" href="css/topcoat-mobile-dark.min.css" disabled />
+    <link rel="stylesheet" href="css/topcoat-mobile-light.min.css" disabled />
+    <meta
+      name="description"
+      content="Professional property maintenance and oversight by Gabe the Guardian."
+    />
+
+    <meta property="og:title" content="Gabe the Guardian" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:image" content="https://example.com/og-image.jpg" />
+    <meta
+      property="og:image:alt"
+      content="Gabe the Guardian - Reliable Maintenance Expert"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#ddeeff" />
+  </head>
+  <body data-bs-theme="dark" data-bs-core="modern">
+    <h1 class="hero-title" style="margin-top: 3rem">Gabe the Guardian</h1>
+    <div class="topcoat-tab-bar w-auto mx-auto fixed-top overflow-x-auto">
+      <label class="topcoat-tab-bar__item" for="card-picker-0">
+        <input
+          type="radio"
+          name="card-picker"
+          value="pm"
+          class="btn-check"
+          id="card-picker-0"
+          autocomplete="off"
+          onchange="selectCategory(this)"
+          checked="false"
+        />
+        <button
+          class="topcoat-tab-bar__button d-flex align-items-center justify-content-center"
+        >
+          🛡️ PM & 911
+        </button>
+      </label>
+      <label class="topcoat-tab-bar__item" for="card-picker-1">
+        <input
+          type="radio"
+          name="card-picker"
+          value="troubleshooting"
+          class="btn-check"
+          id="card-picker-1"
+          autocomplete="off"
+          onchange="selectCategory(this)"
+          checked="false"
+        />
+        <button
+          class="topcoat-tab-bar__button d-flex align-items-center justify-content-center"
+        >
+          ⚙️ Electrical / Plumbing / HVAC
+        </button>
+      </label>
+      <label class="topcoat-tab-bar__item" for="card-picker-2">
+        <input
+          type="radio"
+          name="card-picker"
+          value="junk"
+          class="btn-check"
+          id="card-picker-2"
+          autocomplete="off"
+          onchange="selectCategory(this)"
+          checked="false"
+        />
+        <button
+          class="topcoat-tab-bar__button d-flex align-items-center justify-content-center"
+        >
+          🧹 Junk Removal & Cleanup
+        </button>
+      </label>
+      <label class="topcoat-tab-bar__item" for="card-picker-3">
+        <input
+          type="radio"
+          name="card-picker"
+          value="grounds"
+          class="btn-check"
+          id="card-picker-3"
+          autocomplete="off"
+          onchange="selectCategory(this)"
+          checked="false"
+        />
+        <button
+          class="topcoat-tab-bar__button d-flex align-items-center justify-content-center"
+        >
+          🌿 Groundskeeping & Lawncare
+        </button>
+      </label>
+    </div>
+    <main class="container-fluid text-body">
+      <div class="container-fluid g-0" style="margin-top: 4rem">
+        <!-- Top Menu: One item per category -->
+      </div>
+      <!-- Business Card: single card flips on load, back content updates per selection -->
+      <div class="business-card" id="card">
+        <div class="card-inner">
+          <div class="card-front topcoat-card">Gabe the Guardian</div>
+          <div class="card-back topcoat-card" id="card-back">
+            <!-- Default back: phone info -->
+            <div class="card-back-content">
+              <p style="font-size: 1.2rem; font-weight: bold">
+                📞 (123) 456-7890
+              </p>
+              <p>Call or text, day or night</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
