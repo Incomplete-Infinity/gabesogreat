@@ -50,7 +50,7 @@ class JokeManager {
     if (this.activeJokes.some(j => j.id === id)) return;
 
     const blurb = document.createElement('div');
-    blurb.className = 'blurb topcoat-card';
+    blurb.className = 'blurb card subpixel-antialiased';
     blurb.textContent = text;
     document.body.appendChild(blurb);
 
