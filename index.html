@@ -29,8 +29,9 @@
     <meta name="theme-color" content="#ddeeff" />
   </head>
   <body data-bs-theme="dark" data-bs-core="modern">
-    <h1 class="hero-title" style="margin-top: 3rem">Gabe the Guardian</h1>
-    <div class="topcoat-tab-bar w-auto mx-auto fixed-top overflow-x-auto">
+    <h1 class="hero-title" style="margin-top: 3rem">Gabe's So Great!</h1>
+    <header class="fixed-top">
+    <div class="topcoat-tab-bar mx-auto overflow-x-auto">
       <label class="topcoat-tab-bar__item" for="card-picker-0">
         <input
           type="radio"
@@ -100,14 +101,18 @@
         </button>
       </label>
     </div>
+    </header>
     <main class="container-fluid text-body">
-      <div class="container-fluid g-0" style="margin-top: 4rem">
+<header>
+  <p class="lead">Local Handy Services</p>
+</header>
+      <div class="container-fluid g-0" style="margin-top: 0rem">
         <!-- Top Menu: One item per category -->
       </div>
       <!-- Business Card: single card flips on load, back content updates per selection -->
       <div class="business-card" id="card">
         <div class="card-inner">
-          <div class="card-front topcoat-card">Gabe the Guardian</div>
+          <div class="card-front topcoat-card">Gabe's So Great!</div>
           <div class="card-back topcoat-card" id="card-back">
             <!-- Default back: phone info -->
             <div class="card-back-content">
@@ -120,7 +125,11 @@
         </div>
       </div>
     </main>
+<footer class="fixed-bottom text-center">
+  <p class="mb-0">&copy;&thinsp;2025&nbsp;Gabriel&thinsp;Kipfer</p>
+  <small>Jokes provided by <a href="chucknorris.io">chucknorris.io</a></small>
 
+</footer>
     <script type="module" src="js/app.js"></script>
   </body>
 </html>
